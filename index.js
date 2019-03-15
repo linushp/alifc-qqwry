@@ -20,7 +20,7 @@ module.exports.initializer = function (context, callback) {
 
 function sendSearchIpResponse(ipv4, resp) {
     resp.setHeader("Content-Disposition", "");
-    resp.setHeader("Content-Type", "application/json");
+    resp.setHeader("Content-Type", "application/json;;charset=utf-8");
 
     resp.setHeader("Access-Control-Allow-Origin", "*");
     resp.setHeader("Access-Control-Allow-Methods", "*");
