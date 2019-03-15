@@ -21,6 +21,14 @@ module.exports.initializer = function (context, callback) {
 function sendSearchIpResponse(ipv4, resp) {
     resp.setHeader("Content-Disposition", "");
     resp.setHeader("Content-Type", "application/json");
+
+    resp.setHeader("Access-Control-Allow-Origin", "*");
+    resp.setHeader("Access-Control-Allow-Methods", "*");
+    resp.setHeader("Access-Control-Allow-Headers", "*");
+    resp.setHeader("Access-Control-Allow-Credentials", "true");
+    resp.setHeader("XDomainRequestAllowed","1");
+
+
     if (!ipv4) {
         resp.send("ipv4 is null");
         return;
