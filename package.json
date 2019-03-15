@@ -24,16 +24,7 @@
   },
   "license": "BSD",
   "dependencies": {
-    "axios": "^0.18.0",
-    "chalk": "^2.4.2",
-    "commander": "^2.19.0",
-    "gbk.js": "^0.2.0",
-    "progress": "^2.0.3",
-    "stream.pipeline-shim": "^1.0.4",
-    "to-regex": "^3.0.2"
+    "gbk.js": "^0.2.0"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4"
-  }
+  "devDependencies": {}
 }

@@ -10,3 +10,8 @@ data/*.tmp
 pids
 logs
 results
+
+node_modules/
+.idea/
+.DS_Store
+package-lock.json
